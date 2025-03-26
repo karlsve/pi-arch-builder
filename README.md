@@ -1,5 +1,5 @@
 # pi-arch-builder
-Helps finishing builds for specific archs
+Helps finishing builds for specific archs.
 
 ## How to use
 
@@ -9,3 +9,5 @@ Helps finishing builds for specific archs
 docker build -t pi-builder .
 docker run -it -v $(pwd)/images:/builder/images --privileged --rm pi-builder ubuntu.img aarch64 3G
 ```
+
+Once started you will be dropped into a shell on the image running within qemu to emulate the correct environment.
